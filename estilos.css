@@ -10,11 +10,52 @@ header{
     top: 0;
     height: 100px;
     width: 100%;
-    background-color: darkslateblue;
+    background-image: url("img/papel.jpg");
     text-align: center;
     z-index: 10;
     border-bottom:10px solid black;
 
+}
+#portada{
+    position:absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    background-image: url("img/oficina.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align:center;
+    line-height:100%;
+    z-index:90;
+}
+
+#portada:hover{
+    opacity:0;
+    transition:2s;
+}
+#capaportada{
+    position:absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    background-color:#e4e4e4;
+    background-image:url(img/fondo.jpg);
+    background-position:center;
+    background-size:cover;
+}
+h1{
+    position:absolute;
+    text-align:center;
+    color: red;
+    text-shadow: 0 0 20px red;
+    font-family: cursive;
+    width:100%;
+    Top:65%;
+    Font-size: 3em;
+    z-index: 100;
 }
 
 #lateral{
@@ -28,22 +69,26 @@ header{
     padding: 5px;
     z-index: 5;
     border-right:10px solid black;
+    border-right-style: dashed;
+
 }
+
+
 #lateral li {
     padding: 5px;
+    list-style: none;
+
 }
 #lateral li:hover{
     background-color: white;
 }
-h1 em{
-    color: white;
+h2 em{
+    color: black;
     font-size: 2em;
 }
 main{
     position: absolute;
     float: right;
-}
-h2{
-    color: green;
-    border-bottom: 1px solid green;
+    top: 120px;
+    left: 400px;
 }
