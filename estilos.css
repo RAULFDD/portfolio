@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Birthstone&display=swap');
 
 *{
     font-family: Garamond,sans-serif;
@@ -50,7 +51,7 @@ h1{
     text-align:center;
     color: red;
     text-shadow: 0 0 20px red;
-    font-family: cursive;
+    font-family: Birthstone,sans-serif;
     width:100%;
     Top:65%;
     Font-size: 3em;
@@ -105,12 +106,14 @@ h2 em{
 h3{
     text-align: center;
     font-size: 2em;
+    color: limegreen;
+
 }
 main{
     position: absolute;
     float: right;
     top: 110px;
-    width: 69%;
+    width: 70%;
     left: 25%;
     padding: 50px;
     background-color:#e4e4e4;
@@ -122,8 +125,14 @@ main{
 }
 #inicio{
     position: static;
-    padding: 30px;
+    padding-left: 30px;
     text-align: justify;
+}
+
+thead{
+    text-align: center;
+    background-color: aqua;
+    color: white;
 }
 
 footer{
