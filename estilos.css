@@ -10,13 +10,15 @@ header{
     top: 0;
     height: 100px;
     width: 100%;
+    padding: 0;
+    margin: 0;
     background-image: url("img/papel.jpg");
     text-align: center;
     z-index: 10;
     border-bottom:10px solid black;
 
 }
-#portada{
+/*#portada{
     position:absolute;
     left:0;
     top:0;
@@ -34,11 +36,12 @@ header{
 #portada:hover{
     opacity:0;
     transition:2s;
-}
+}*/
 #capaportada{
     position:absolute;
     left:0;
     top:0;
+
 
 
 }
@@ -59,7 +62,7 @@ h1{
     margin: 0;
     left:0;
     top: 100px;
-    width:320px;
+    width: 25%;
     bottom:0;
     background-color: lightslategray; 
     padding: 5px;
@@ -73,36 +76,91 @@ h1{
 #lateral li {
     padding: 5px;
     list-style: none;
+    background-image: url("img/flecha.jpg");
 
+
+}
+#lateral li img{
+    background-image: url("img/flecha.jpg");
+    z-index: 6;
 }
 #lateral li:hover{
     background-color: white;
 
 }
+#lateral a:hover{
+    color:black;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    z-index: 6;
+    font-family: Georgia,sans-serif;
+}
 h2 em{
     color: black;
+    font-size: 2em;
+
+}
+
+h3{
+    text-align: center;
     font-size: 2em;
 }
 main{
     position: absolute;
     float: right;
     top: 110px;
-    left: 340px;
+    width: 69%;
+    left: 25%;
+    padding: 50px;
     background-color:#e4e4e4;
     background-image:url(img/fondo.jpg);
     background-position:center;
     background-size:cover;
-    padding: 40px;
+    margin: 0;
+
+}
+#inicio{
+    position: static;
+    padding: 30px;
     text-align: justify;
 }
-#pie{
+
+footer{
     position: fixed;
     width: 100%;
     height: 10%;
-    padding-left: 10px;
     background-color: black;
     top: 97%;
     left: 0;
     color: white;
     z-index: 80;
+    text-align: center;
+}
+figure{
+    text-align: center;
+    width: 300px;
+    border: 10px solid black;
+    margin: 0 35%;
+    padding: 0;
+
+}
+
+figcaption{
+    background-color: rgb(114,111,106);
+    color: #d6d6d6;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+
+}
+
+@media screen and (max-width:700px){
+    body{
+        background-image: none;
+    }
+    h2,h3,p,ul{
+        margin-left:10px;
+    }
+
 }
