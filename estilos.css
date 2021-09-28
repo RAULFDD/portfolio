@@ -5,11 +5,15 @@
     font-size: 25px;
 
 }
+body{
+    float: right;
+    overflow-x: hidden;
+}
 header{
     position: fixed;
     left: 0;
     top: 0;
-    height: 80px;
+    height: 70px;
     width: 100%;
     padding: 0;
     margin: 0;
@@ -18,26 +22,38 @@ header{
     z-index: 10;
     border-bottom:10px solid black;
 
+
 }
-/*#portada{
+#portada{
     position:absolute;
     left:0;
     top:0;
     width:100%;
-    height:100%;
+    /*height:100%;
     background-image: url("img/oficina.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: center;*/
     text-align:center;
     line-height:100%;
     z-index:90;
 }
-
-#portada:hover{
+h1{
+    position:fixed;
+    text-align:right;
+    color: red;
+    text-shadow: 0 0 20px red;
+    font-family: Birthstone,sans-serif;
+    width:100%;
+    Top: 10%;
+    right: 200px;
+    Font-size: 50px;
+    z-index: 100;
+}
+/*#portada:hover{
     opacity:0;
     transition:2s;
-}*/
+}
 #capaportada{
     position:absolute;
     left:0;
@@ -45,34 +61,23 @@ header{
 
 
 
-}
-h1{
-    position:absolute;
-    text-align:center;
-    color: red;
-    text-shadow: 0 0 20px red;
-    font-family: Birthstone,sans-serif;
-    width:100%;
-    Top:65%;
-    Font-size: 3em;
-    z-index: 100;
-}
+}*/
+
 
 #menu{
     position:fixed;
-    margin: 0;
-    top: 80px;
+    margin: 0 auto;
+    padding: 0;
+    top: 70px;
     left:0;
-    height: 10%;
+    height: 9%;
     width: 100%;
     bottom:0;
     background-color: lightslategray; 
     z-index: 5;
-    border-right:10px solid black;
-    border-right-style: dashed;
-
+    border-bottom:10px solid black;
+    word-spacing: 10px;
 }
-
 
 #menu li {
     position: relative;
@@ -80,43 +85,82 @@ h1{
     padding-left: 5px;
     list-style: none;
     background-color: lightslategray;
+
 }
 
-#menu li img{
-    background-image: url("img/flecha.jpg");
-    z-index: 6;
+#menu a{
+    text-decoration: none;
+    color: black;
 }
-
 #menu a:hover{
-    color:black;
+    color:white;
     text-decoration: none;
     font-weight: bold;
     text-transform: uppercase;
     z-index: 6;
     font-family: Georgia,sans-serif;
 }
+.submenú1,.submenú2{
+    display: none;
+
+}
+.submenú1{
+    left: -40px;
+}
+.submenú2{
+    top: 10px;
+    right: -10px;
+}
+#menu li:hover .submenú1,.submenú1 li:hover .submenú2{
+    position: absolute;
+    height: 8px;
+    width: 10px;
+    display: block;
+    background-color: black;
+}
+
+
 h2 em{
     color: black;
     font-size: 2em;
-
 }
+
 h3{
     text-align: center;
     font-size: 2em;
     color: rgb(100,30,40);
+}
+h3:hover{
+    transition: 3s;
+    transform: rotate(360deg);
 }
 
 h4{
     text-align: center;
     font-size: 2em;
     color: limegreen;
-    border-bottom: 1px solid limegreen;
+    border-bottom: 1px solid lightseagreen;
+}
+figure img:hover{
+    width:100%;
+    height: 100%;
+    transition: 1s;
 
 
 }
+figcaption img:hover{
+
+}
+
+.iconos{
+    top: 0;
+}
+.iconos img{
+    width: 60px;
+    height: 60px;
+}
 main{
     position: absolute;
-    float: right;
     top: 110px;
     width: 100%;
     left: 0;
@@ -126,22 +170,28 @@ main{
     background-position:center;
     background-size:cover;
     margin: 0;
-    overflow-x: hidden;
-
 }
-#inicio{
+
+#contenido{
     position: static;
     padding: 30px;
     text-align: justify;
-    overflow-x: hidden;
+    margin: 0;
 }
 table{
     margin: 0 auto;
+    text-align: justify;
 }
 thead{
     text-align: center;
-    background-color: aqua;
+    background-color: white;
+    color: black;
+}
+#tabla{
+    background-color: rgb(113, 16, 178);
     color: white;
+    text-align: center;
+
 }
 
 footer{
@@ -149,7 +199,7 @@ footer{
     width: 100%;
     height: 10%;
     background-color: black;
-    top: 97%;
+    top: 96%;
     left: 0;
     color: white;
     z-index: 80;
@@ -165,7 +215,7 @@ figure{
 }
 
 figcaption{
-    background-color: rgb(114,111,106);
+    background-color: rgb(120,110,105);
     color: #d6d6d6;
     text-align: center;
     margin: 0;
