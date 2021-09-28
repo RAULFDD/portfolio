@@ -1,13 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Birthstone&display=swap');
 
-*{
-    font-family: Garamond,sans-serif;
-    font-size: 25px;
 
-}
 body{
     float: right;
     overflow-x: hidden;
+    font-family: Garamond,sans-serif;
+    font-size: 20px;
 }
 header{
     position: fixed;
@@ -18,27 +16,22 @@ header{
     padding: 0;
     margin: 0;
     background-image: url("../img/papel.jpg");
+    background-position:center;
     text-align: center;
     z-index: 10;
-    border-bottom:10px solid black;
 
 
 }
-/*#portada{
-    position:absolute;
-    left:0;
-    top:0;
-    width:100%;
-    /*height:100%;
-    background-image: url("img/oficina.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center; *
-    text-align:center;
-    line-height:100%;
-    z-index:90;
+h2{
+    margin: 0 auto;
+    padding: 0;
 }
-*/
+h2 em{
+    color: black;
+    font-size: 2em;
+    font-family: Birthstone,sans-serif;
+}
+
 
 h1{
     position:fixed;
@@ -47,84 +40,93 @@ h1{
     text-shadow: 0 0 20px red;
     font-family: Birthstone,sans-serif;
     width:50%;
-    Top: 0;
+    Top: 25px;
     left: 700px;
-    Font-size: 80px;
+    Font-size: 50px;
     z-index: 100;
 }
-/*#portada:hover{
-    opacity:0;
-    transition:2s;
-}
-#capaportada{
-    position:absolute;
-    left:0;
-    top:0;
-}*/
 
-
-#menu{
-    position:fixed;
-    margin: 0 auto;
-    padding: 0;
+nav{
+    position: fixed;
+    background-color: black;
+    color: white;
+    left: 0;
     top: 70px;
-    left:0;
-    height: 9%;
     width: 100%;
-    bottom:0;
-    background-color: lightslategray;
-    z-index: 5;
-    border-bottom:10px solid black;
-    word-spacing: 10px;
+    height: 44px;
+    z-index: 15;
+
 }
 
-#menu  li {
-    position: relative;
+nav a{
+    color: white;
+    text-decoration: none;
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+
+}
+nav>ul>li{
     display: inline-block;
-    padding-left: 5px;
-    list-style: none;
-    background-color: lightslategray;
-
+    width: 150px;
+    text-align: center;
+    padding: 10px 0;
 }
-
-#menu a{
-    text-decoration: none;
-    color: black;
+nav>ul>li:hover{
+    background-color: gray;
 }
-#menu a:hover{
-    color:white;
-    text-decoration: none;
-    font-weight: bold;
-    text-transform: uppercase;
-    z-index: 6;
-    font-family: Georgia,sans-serif;
-
-}
-.submenú1,.submenú2{
+nav>ul>li>ul{
+    position: absolute;
+    top: 40px;
+    background-color: black;
+    width: 150px;
+    text-align: left;
     display: none;
 
 }
-.submenú1{
-
-    left: -40px;
-
+nav>ul>li>ul>li{
+    display: block;
+    padding: 5px;
 }
-.submenú2{
-    top: 10px;
-    right: -10px;
+nav>ul>li>ul>li:hover{
+    background-color: gray;
 }
-#menu li:hover .submenú1,.submenú1 li:hover .submenú2{
-    position: absolute;
-    height: 8px;
-    width: 10px;
+nav>ul>li:hover >ul{
     display: block;
 }
 
+
+nav>ul>li>ul>li>ul>li{
+    display: block;
+    padding: 5px;
+}
+nav>ul>li>ul>li>ul>li:hover{
+    background-color: gray;
+}
+nav>ul>li:hover>ul>li:hover>ul{
+    display: block;
+}
+
+nav>ul>li>ul>li>ul{
+    position: absolute;
+    top: 0;
+    left: 150px;
+    background-color: black;
+    width: 200px;
+    text-align: left;
+    display: none;
+}
+#soy td{
+    text-align: justify;
+    padding: 20px;
+
+}
 figure{
     text-align: center;
     width: 400px;
     height: 400px;
-    border: 10px solid black;
+    border: 10px solid brown;
     padding: 0;
     margin: 0 auto;
     background-image: url("../img/raul.PNG");
@@ -142,15 +144,8 @@ figcaption{
 
 }
 figcaption:hover{
-    background-color: red;
+    background-color: black;
     text-transform: uppercase;
-}
-
-
-
-h2 em{
-    color: black;
-    font-size: 2em;
 }
 
 h3{
@@ -168,19 +163,17 @@ h3:hover{
 
 h4{
     text-align: center;
-    font-size: 2em;
+    font-size: 3em;
     color: limegreen;
     border-bottom: 1px solid lightseagreen;
 }
-
-
 
 .iconos{
     top: 0;
 }
 .iconos img{
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
 }
 
 main{
@@ -189,11 +182,12 @@ main{
     width: 100%;
     left: 0;
     padding: 0;
-    background-color:#e4e4e4;
+    margin: 0;
+    background-color:red;
     background-image:url(../img/fondo.jpg);
     background-position:center;
     background-size:cover;
-    margin: 0;
+    z-index: 9;
 }
 
 #contenido{
@@ -206,8 +200,11 @@ table{
     margin: 0 auto;
     text-align: justify;
 }
-thead th{
+
+
+#titulos thead th{
     text-align: center;
+
     background-color: white;
     color: black;
     font-size: 2em;
@@ -215,15 +212,14 @@ thead th{
     padding: 0;
     height: 100px
 }
-thead th img{
+#titulos img{
     margin: 0 auto;
     text-align: center;
 }
-#tabla{
+#celdas{
     background-color: rgb(113, 16, 178);
     color: white;
     text-align: center;
-
 }
 
 footer{
