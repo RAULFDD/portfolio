@@ -17,14 +17,14 @@ header{
     width: 100%;
     padding: 0;
     margin: 0;
-    background-image: url("img/papel.jpg");
+    background-image: url("../img/papel.jpg");
     text-align: center;
     z-index: 10;
     border-bottom:10px solid black;
 
 
 }
-#portada{
+/*#portada{
     position:absolute;
     left:0;
     top:0;
@@ -33,21 +33,23 @@ header{
     background-image: url("img/oficina.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;*/
+    background-position: center; *
     text-align:center;
     line-height:100%;
     z-index:90;
 }
+*/
+
 h1{
     position:fixed;
     text-align:right;
     color: red;
     text-shadow: 0 0 20px red;
     font-family: Birthstone,sans-serif;
-    width:100%;
-    Top: 10%;
-    right: 200px;
-    Font-size: 50px;
+    width:50%;
+    Top: 0;
+    left: 700px;
+    Font-size: 80px;
     z-index: 100;
 }
 /*#portada:hover{
@@ -58,9 +60,6 @@ h1{
     position:absolute;
     left:0;
     top:0;
-
-
-
 }*/
 
 
@@ -73,13 +72,13 @@ h1{
     height: 9%;
     width: 100%;
     bottom:0;
-    background-color: lightslategray; 
+    background-color: lightslategray;
     z-index: 5;
     border-bottom:10px solid black;
     word-spacing: 10px;
 }
 
-#menu li {
+#menu  li {
     position: relative;
     display: inline-block;
     padding-left: 5px;
@@ -99,13 +98,16 @@ h1{
     text-transform: uppercase;
     z-index: 6;
     font-family: Georgia,sans-serif;
+
 }
 .submenú1,.submenú2{
     display: none;
 
 }
 .submenú1{
+
     left: -40px;
+
 }
 .submenú2{
     top: 10px;
@@ -116,8 +118,34 @@ h1{
     height: 8px;
     width: 10px;
     display: block;
-    background-color: black;
 }
+
+figure{
+    text-align: center;
+    width: 400px;
+    height: 400px;
+    border: 10px solid black;
+    padding: 0;
+    margin: 0 auto;
+    background-image: url("../img/raul.PNG");
+    background-position:center;
+    background-size:cover;
+
+}
+
+figcaption{
+    background-color: rgb(120,110,105);
+    color: #d6d6d6;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+
+}
+figcaption:hover{
+    background-color: red;
+    text-transform: uppercase;
+}
+
 
 
 h2 em{
@@ -133,6 +161,9 @@ h3{
 h3:hover{
     transition: 3s;
     transform: rotate(360deg);
+    animation-duration: 3s;
+    animation-delay: 2s;
+
 }
 
 h4{
@@ -141,24 +172,17 @@ h4{
     color: limegreen;
     border-bottom: 1px solid lightseagreen;
 }
-figure img:hover{
-    width:100%;
-    height: 100%;
-    transition: 1s;
 
 
-}
-figcaption img:hover{
-
-}
 
 .iconos{
     top: 0;
 }
 .iconos img{
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
 }
+
 main{
     position: absolute;
     top: 110px;
@@ -166,7 +190,7 @@ main{
     left: 0;
     padding: 0;
     background-color:#e4e4e4;
-    background-image:url(img/fondo.jpg);
+    background-image:url(../img/fondo.jpg);
     background-position:center;
     background-size:cover;
     margin: 0;
@@ -182,10 +206,18 @@ table{
     margin: 0 auto;
     text-align: justify;
 }
-thead{
+thead th{
     text-align: center;
     background-color: white;
     color: black;
+    font-size: 2em;
+    margin: 0 auto;
+    padding: 0;
+    height: 100px
+}
+thead th img{
+    margin: 0 auto;
+    text-align: center;
 }
 #tabla{
     background-color: rgb(113, 16, 178);
@@ -204,23 +236,6 @@ footer{
     color: white;
     z-index: 80;
     text-align: center;
-}
-figure{
-    text-align: center;
-    width: 300px;
-    border: 10px solid black;
-    padding: 0;
-    margin: 0 auto;
-
-}
-
-figcaption{
-    background-color: rgb(120,110,105);
-    color: #d6d6d6;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-
 }
 
 @media screen and (max-width:700px){
