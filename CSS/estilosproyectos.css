@@ -137,15 +137,17 @@ main{
     position: static;
     padding: 30px;
     margin: 0;
+    text-align: center;
 }
 
 h3{
-    text-align: center;
+
     font-size: 2em;
     border-bottom: 2px solid darkslateblue;
     color: darkslateblue;
     width: 100px;
     margin: 0 auto;
+    display: inline;
 
 }
 h3:hover{
