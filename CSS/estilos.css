@@ -120,7 +120,15 @@ nav>ul>li>ul>li>ul{
 }
 #soy td{
     text-align: justify;
-    padding: 20px;
+    padding: 30px;
+
+}
+#sobremi{
+    background-image: url("/img/naranja.jpg");
+    background-position:center;
+    background-size:cover;
+    border-radius: 30px;
+    color: black;
 
 }
 figure{
@@ -133,6 +141,7 @@ figure{
     background-image: url("../img/raul actual.png");
     background-position:center;
     background-size:cover;
+    border-radius: 20px;
 
 }
 
@@ -142,6 +151,7 @@ figcaption{
     text-align: center;
     margin: 0;
     padding: 0;
+    border-radius: 20px;
 
 }
 figcaption:hover{
@@ -166,7 +176,8 @@ h4{
     text-align: center;
     font-size: 3em;
     color: limegreen;
-    border-bottom: 1px solid lightseagreen;
+    border-bottom: 2px solid lightseagreen;
+
 }
 
 .iconos{
@@ -175,6 +186,7 @@ h4{
 .iconos img{
     width: 60px;
     height: 60px;
+    border-radius: 20px 0 20px 0;
 }
 
 
@@ -186,7 +198,7 @@ main{
     padding: 0;
     margin: 0;
     background-color:red;
-    background-image:url(../img/fondo.jpg);
+    background-image:url(/img/fondo.jpg);
     background-position:center;
     background-size:cover;
     z-index: 9;
@@ -194,18 +206,17 @@ main{
 
 #contenido{
     position: static;
-    padding: 30px;
+    padding: 50px;
     text-align: justify;
     margin: 0;
 }
-table{
+#titulos{
     margin: 0 auto;
     text-align: justify;
-}
-#soy td{
-    padding: 25px;
+    border-color: aqua ;
 
 }
+
 
 #titulos thead th{
     text-align: center;
@@ -214,8 +225,10 @@ table{
     font-size: 2em;
     margin: 0 auto;
     padding: 0;
-    height: 100px
+    height: 100px;
+
 }
+
 #titulos img{
     margin: 0 auto;
     text-align: center;

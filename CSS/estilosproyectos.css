@@ -135,7 +135,7 @@ main{
 
 #contenido{
     position: static;
-    padding: 30px;
+    padding: 50px;
     margin: 0;
     text-align: center;
 }
@@ -157,6 +157,8 @@ h3:hover{
 table{
     margin: 0 auto;
     font-family: EB Garamond, sans-serif;
+    border-color: aqua;
+    border-radius: 20px 0 20px 0;
 }
 th {
     text-align: center;
@@ -165,10 +167,12 @@ th {
     font-size: 40px;
     font-style: italic;
     font-family: Birthstone, sans-serif;
+    border-radius: 20px 0 20px 0;
 }
 td{
     text-align: justify;
     padding: 20px;
+    border-radius: 20px 0 20px 0;
 }
 
 table tr:nth-child(odd){
