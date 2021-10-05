@@ -124,7 +124,7 @@ nav>ul>li>ul>li>ul{
 
 }
 #sobremi{
-    background-image: url("/img/naranja.jpg");
+    background-image: url("../img/naranja.jpg");
     background-position:center;
     background-size:cover;
     border-radius: 30px;
