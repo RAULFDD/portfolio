@@ -122,11 +122,13 @@ nav>ul>li>ul>li>ul{
     text-align: justify;
     padding: 30px;
 
+
 }
 #sobremi{
     background-image: url("../img/naranja.jpg");
     background-position:center;
     background-size:cover;
+    background-color: darkorange;
     border-radius: 30px;
     color: black;
 
