@@ -197,7 +197,7 @@ main{
     left: 0;
     padding: 0;
     margin: 0;
- 
+    background-color:red;
     background-image:url(../img/fondo.jpg);
     background-position:center;
     background-size:cover;
