@@ -155,11 +155,14 @@ h3:hover{
     font-size: 3em;
 }
 table{
-    margin: 0 auto;
+    margin: 10px auto;
     font-family: EB Garamond, sans-serif;
     border-color: aqua;
     border-radius: 20px 0 20px 0;
 
+}
+thead{
+    margin: 0;
 }
 th {
     text-align: center;
@@ -169,6 +172,8 @@ th {
     font-style: italic;
     font-family: Birthstone, sans-serif;
     border-radius: 20px 0 20px 0;
+    margin: 0;
+
 }
 td{
     text-align: justify;
@@ -221,6 +226,10 @@ footer{
     .iconos img{
         width: 0;
         height:0;
+    }
+    .caja img{
+        width: 150px;
+        height: 100px;
     }
 
 }
